@@ -1,0 +1,25 @@
+<mvc:View xmlns:core="sap.ui.core" 
+		   xmlns:mvc="sap.ui.core.mvc" 
+		   xmlns="sap.m"
+		   xmlns:l="sap.ui.layout"
+		   xmlns:u="sap.ui.unified"
+		   class="viewPadding"
+		  controllerName="myui5.test01" xmlns:html="http://www.w3.org/1999/xhtml"
+	    >
+	    <l:HorizontalLayout>
+	    	<l:content>
+	    		<Button id="openMenu" text="Open Menu" press="handlePressOpenMenu" />
+	    		<Label text="test label"></Label>
+	    		<Switch state="X" id="switch_01" change="onChange_01" />
+	    		<Button id="btn_Switch_Val" text="Get Value" press="onGetValue" />
+	    	</l:content>
+	    </l:HorizontalLayout>
+	    
+	    <List HeaderText="TestInputListItem">
+	    	<InputListItem label="Item--01">
+	    	<Label text="L---1" labelfor="I01"/>
+	    	<Input id="I01"/>
+	    	</InputListItem>
+	    </List>
+	    
+</mvc:View>
